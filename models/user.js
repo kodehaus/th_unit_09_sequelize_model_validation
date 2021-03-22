@@ -5,16 +5,20 @@ module.exports = (sequelize) => {
   class User extends Model {}
   User.init({
     name: {
-      type: DataTypes.STRING
+      type: DataTypes.STRING,
+      allowNull: false
     },
     email: {
-      type: DataTypes.STRING    
+      type: DataTypes.STRING,
+      allowNull: false
     },
     birthday: {
-      type: DataTypes.DATEONLY
+      type: DataTypes.DATEONLY,
+      allowNull: false
     },
     password: {
-      type: DataTypes.STRING
+      type: DataTypes.STRING,
+      allowNull: false
     }
   }, { sequelize });
 
