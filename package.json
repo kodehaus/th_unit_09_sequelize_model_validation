@@ -1,0 +1,35 @@
+{
+  "name": "rest-api-validation-with-express",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "mocha"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "axios": "^0.21.1",
+    "chai": "^4.3.3",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "mocha": "^8.3.0",
+    "nodemon": "^2.0.7"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0"
+  },
+  "semistandard": {
+    "env": [
+      "mocha",
+      "chai",
+      "axios",
+      "express"
+    ]
+  }
+}
