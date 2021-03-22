@@ -40,6 +40,9 @@ module.exports = (sequelize) => {
         },
         notEmpty: {
           msg: "Birthday can not be empty"
+        },
+        isDate: {
+          msg: 'Birthday must be a valid date value'
         }
       }
     },
@@ -52,6 +55,10 @@ module.exports = (sequelize) => {
         },
         notEmpty: {
           msg: "The password can not be empty"
+        },
+        len: {
+          args: [8,20],
+          msg: 'The password should be between 8 and 20 characters long'
         }
       }
     }
